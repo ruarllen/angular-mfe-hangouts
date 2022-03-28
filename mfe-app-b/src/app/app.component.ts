@@ -20,7 +20,7 @@ export class AppComponent implements OnInit {
   }
   title = 'mfe-app-a';
 
-  sugestiveId = 1;
+  sugestiveId = 0;
 
 
   select(number:number){
