@@ -39,9 +39,12 @@ export class AppModule {
         remoteEntry: "http://localhost:5005/remoteEntry.js",
         exposedModule: "./AppBModule"
       },
-      // 'mfe-c': {
-      //   remoteUrl: "http://localhost:7000/remoteEntry.js",
-      // }
+      {
+        labelName: "mfe-c",
+        remoteName: "mfeAppC",
+        remoteEntry: "http://localhost:5015/remoteEntry.js",
+        exposedModule: "./AppCModule"
+      },
     ];
 
     childrenModules.forEach(async (childrenModule) => {

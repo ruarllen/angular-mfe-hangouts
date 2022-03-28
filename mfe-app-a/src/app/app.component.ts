@@ -1,4 +1,5 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
+import { EventHandlerService } from 'src/services/event.handler.service';
 
 @Component({
   selector: 'app-root',
@@ -6,6 +7,16 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   styleUrls: ['./app.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
+
+  constructor(private eventService: EventHandlerService) { }
+
+  ngOnInit(): void {
+    this.eventService.sub("item-change")
+      .subscribe(console.log);
+  }
+
   title = 'mfe-app-a';
+
+
 }
