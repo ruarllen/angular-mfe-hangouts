@@ -1,6 +1,6 @@
 .products{
     border: dashed 6px rebeccapurple;
-    width: 150px;
+    width: 160px;
     height: 630px;
     display: flex;
     float: right;
@@ -11,7 +11,7 @@
 
 .product{
         /* display: flex; */
-        margin-left: -37px;
+        margin-left: -128px;
         margin-top: 70px;
 }
 
@@ -43,4 +43,12 @@
         border-bottom: 5px solid rebeccapurple;
         cursor: pointer;
     }
+}
+
+
+img {
+    width:128px;
+    height:128px;
+    object-fit:cover;
+    pointer-events: none
 }
