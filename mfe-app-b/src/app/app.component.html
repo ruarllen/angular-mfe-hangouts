@@ -1,1 +1,41 @@
-Hello From App B
+<div class="products">
+    <div class="text"> Related Products </div>
+    <div class="cProds" *ngIf="sugestiveId == 1">
+        <div class="product"> <img src="https://icons.iconarchive.com/icons/iconicon/veggies/128/bananas-icon.png">
+        </div>
+
+        <div class="product"><img src="https://icons.iconarchive.com/icons/fi3ur/fruitsalad/128/strawberry-icon.png"></div>
+        
+        <div class="product"><img src="https://icons.iconarchive.com/icons/fi3ur/fruitsalad/128/apple-icon.png"></div>
+        
+    </div>
+    <div class="cProds" *ngIf="sugestiveId == 2">
+        <div class="product"><img src="https://icons.iconarchive.com/icons/graphicloads/food-drink/128/drink-icon.png"></div>
+        
+        <div class="product"><img src="https://icons.iconarchive.com/icons/graphicloads/food-drink/128/drink-2-icon.png"></div>
+        
+        <div class="product"> <img src="https://icons.iconarchive.com/icons/musett/coffee-shop/128/Beer-icon.png"></div>
+       
+    </div>
+    <div class="cProds" *ngIf="sugestiveId == 3">
+        <div class="product"><img src="https://icons.iconarchive.com/icons/dunedhel/choson/128/Pacman-icon.png"></div>
+        
+        <div class="product"><img src="https://icons.iconarchive.com/icons/google/noto-emoji-food-drink/128/32382-hamburger-icon.png"></div>
+        
+        <div class="product"> <img src="https://icons.iconarchive.com/icons/google/noto-emoji-food-drink/128/32396-popcorn-icon.png"></div>
+       
+    </div>
+</div>
+
+<div  class="sProds" >
+    <div class="sProd"(click)="select(1)">
+        
+        <img src="https://icons.iconarchive.com/icons/fi3ur/fruitsalad/128/apple-icon.png">
+    </div>
+    <div  class="sProd"(click)="select(2)">
+        <img src="https://icons.iconarchive.com/icons/babasse/old-school/128/coffee-icon.png">
+    </div>
+    <div  class="sProd"(click)="select(3)">
+        <img src="https://icons.iconarchive.com/icons/sonya/swarm/128/Pizza-icon.png">
+    </div>
+</div>

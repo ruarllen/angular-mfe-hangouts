@@ -8,4 +8,11 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'mfe-app-a';
+
+  sugestiveId = 1;
+
+
+  select(number:number){
+    this.sugestiveId = number
+  }
 }

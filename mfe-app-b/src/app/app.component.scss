@@ -1,0 +1,40 @@
+.products{
+    border: dashed rebeccapurple;
+    width: 150px;
+    height: 55vh;
+    display: flex;
+    float: 
+    right;
+}
+
+.product{
+        /* display: flex; */
+        margin-left: -37px;
+        margin-top: 70px;
+}
+
+.text{
+    text-align: center;
+    font-weight: 400;
+    display: flex;
+  justify-content: center;
+  width: 150px;
+}
+
+.cProds{
+ //   display: flex;
+}
+
+
+.sProds{
+    width: 420px;
+    //background-color: rebeccapurple;
+    display: flex;
+    margin-left: 0;
+    float: right;
+}
+
+.sProd{
+    margin-left: 10px;
+    border-bottom: 5px solid rebeccapurple;
+}
