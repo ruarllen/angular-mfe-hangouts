@@ -20,7 +20,6 @@ export class AppAModule {
    * @param injector Contains the provider regarding the host
    */
   public remoteBootstrap(injector: Injector): void {
-    console.warn("Remote Boostrap called");
     const myCustomElement = createCustomElement(AppComponent, { injector });
     customElements.define("mfe-a", myCustomElement);
   }

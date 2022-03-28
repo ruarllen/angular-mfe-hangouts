@@ -26,16 +26,19 @@ export class AppModule {
 
     // This is a dummy example, in real world we can fetch this info
     // from a remote server.
-    const childrenModules: any[] = [
+    const childrenModules: remoteModule[] = [
       {
         labelName: "mfe-a",
         remoteName: "mfeAppA",
         remoteEntry: "http://localhost:5000/remoteEntry.js",
         exposedModule: "./AppAModule"
       },
-      // 'mfe-b': {
-      //   remoteUrl: "http://localhost:6000/remoteEntry.js",
-      // },
+      {
+        labelName: "mfe-b",
+        remoteName: "mfeAppB",
+        remoteEntry: "http://localhost:5005/remoteEntry.js",
+        exposedModule: "./AppBModule"
+      },
       // 'mfe-c': {
       //   remoteUrl: "http://localhost:7000/remoteEntry.js",
       // }
@@ -57,4 +60,26 @@ export class AppModule {
 
     });
   }
+}
+
+interface remoteModule {
+  /**
+   * String only for labeling the remote module
+   */
+  labelName: string;
+
+  /**
+   * The address (url) to the remote file of the child mfe.
+   */
+  remoteEntry: string;
+
+  /**
+   * The module exposed in module (as in webpack.config.js)
+   */
+  exposedModule: string;
+
+  /**
+   * The name of the remote (as in webpack.config.js)
+   */
+  remoteName: string;
 }
