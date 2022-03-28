@@ -1,11 +1,11 @@
-<div class="selected">
-    <div *ngIf="selected == 0">
+<div class="selected" [ngSwitch]="selected">
+    <div *ngSwitchDefault>
         <div class="item">Select a product</div>
         <div class="text-item">
             <p>Select a product</p>
         </div>
     </div>
-    <div *ngIf="selected == 1">
+    <div *ngSwitchCase="1">
         <div class="item"><img src="https://icons.iconarchive.com/icons/fi3ur/fruitsalad/128/apple-icon.png"class="img">
         </div>
         <div class="text-item">
@@ -13,7 +13,7 @@
         </div>
         
     </div>
-    <div *ngIf="selected == 2">
+    <div *ngSwitchCase="2">
         <div class="item">
             <img src="https://icons.iconarchive.com/icons/babasse/old-school/128/coffee-icon.png" class="img">
         </div>
@@ -21,7 +21,7 @@
             <p>Coffee</p>
         </div>
     </div>
-    <div *ngIf="selected == 3">
+    <div *ngSwitchCase="3">
         <div class="item">
             <img src="https://icons.iconarchive.com/icons/sonya/swarm/128/Pizza-icon.png" class="img">
         </div>
