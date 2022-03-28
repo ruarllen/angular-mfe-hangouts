@@ -1,6 +1,43 @@
 .top_container{
-    border: dashed green;
+    border: dashed 6px green;
     width: 1300px;
     height: 800px;
     position: absolute;
+}
+
+.sub{
+    display: flex;
+   // background-color: rebeccapurple;
+    width: 500px;
+    position: absolute;
+    bottom: 150px;
+    left: 470px;
+}
+
+.mHost{
+    border: dashed 6px green;
+    font-size: 20px;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+.mA{
+    border: dashed 6px royalblue;
+    font-size: 20px;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+.mB{
+    border: dashed 6px rebeccapurple;
+    font-size: 20px;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+.mC{
+    border: dashed 6px #ff9f00;
+    font-size: 20px;
+    padding: 5px;
+    margin-left: 10px;
 }

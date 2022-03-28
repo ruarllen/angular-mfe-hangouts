@@ -16,7 +16,6 @@ export class AppComponent implements OnInit {
     this.eventService.sub<number>("item-change")
       .subscribe(_=>{
         this.selected = _;
-        console.log(this.selected);
         this.cd.detectChanges();
         
       });
