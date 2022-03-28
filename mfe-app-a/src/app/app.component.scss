@@ -1,0 +1,32 @@
+.selected{
+    //background-color: royalblue;
+    border: dashed  royalblue ;
+    width: 450px;
+    height: 450px;
+    display: flex;
+    position: absolute;
+    left: 100px;
+    top: 55px;
+}
+
+.item{
+    margin: auto;
+    padding: 10px;
+    display: block;
+}
+
+.img{
+
+    width:400px;
+    height: 400px;
+}
+
+.text-item{
+    position: absolute;
+    width: 300px;
+    left: 546px;
+    text-align: center;
+    font-size: 37px;
+    top: 100px;
+    border: dashed royalblue;
+}

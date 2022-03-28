@@ -12,11 +12,11 @@ export class AppComponent implements OnInit {
   constructor(private eventService: EventHandlerService) { }
 
   ngOnInit(): void {
-    const randomInteger: number = parseInt(`${(Math.random() * 100)}`, 10);
-    timer(3000)
+   // const randomInteger: number = parseInt(`${(Math.random() * 100)}`, 10);
+  /*  timer(3000)
       .subscribe(() => {
         this.eventService.pub<number>("item-change", { content: randomInteger, sender: 'mfe-b' });
-      });
+      });*/
   }
   title = 'mfe-app-a';
 
@@ -25,5 +25,6 @@ export class AppComponent implements OnInit {
 
   select(number:number){
     this.sugestiveId = number
+    this.eventService.pub<number>("item-change", { content: number, sender: 'mfe-b' });
   }
 }

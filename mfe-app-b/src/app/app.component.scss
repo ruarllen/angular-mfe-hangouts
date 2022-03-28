@@ -3,8 +3,10 @@
     width: 150px;
     height: 55vh;
     display: flex;
-    float: 
-    right;
+    float: right;
+    position: absolute;
+    right: 40px;
+    top: 10px;
 }
 
 .product{
@@ -27,11 +29,14 @@
 
 
 .sProds{
-    width: 420px;
-    //background-color: rebeccapurple;
+    width: 440px;
     display: flex;
     margin-left: 0;
     float: right;
+    right: 113px;
+    position: absolute;
+    right: 220px;
+    top: 409px;
 }
 
 .sProd{
