@@ -37,9 +37,10 @@
     position: absolute;
     right: 220px;
     top: 409px;
-}
-
-.sProd{
-    margin-left: 10px;
-    border-bottom: 5px solid rebeccapurple;
+    
+    .sProd{
+        margin-left: 10px;
+        border-bottom: 5px solid rebeccapurple;
+        cursor: pointer;
+    }
 }
